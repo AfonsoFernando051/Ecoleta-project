@@ -1,6 +1,7 @@
 import React from "react";
 import { View, ImageBackground, Text, Image, StyleSheet } from "react-native";
 import { RectButton } from "react-native-gesture-handler";
+import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
           <RectButton style={styles.button} onPress={() => { }}>
             <View style={styles.buttonIcon}>
               <Text>
-                g
+             ➡️    
         </Text>
             </View>
             <Text style={styles.buttonText}>
