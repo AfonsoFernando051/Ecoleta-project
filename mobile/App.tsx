@@ -1,7 +1,7 @@
 import React from "react";
 import { isLoading } from 'expo-font';
 import { StatusBar,View } from 'react-native';
-
+import 'react-native-gesture-handler';
 import { Roboto_400Regular, Roboto_500Medium } from '@expo-google-fonts/roboto';
 import { Ubuntu_700Bold, useFonts } from '@expo-google-fonts/ubuntu';
 

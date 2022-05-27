@@ -1,6 +1,5 @@
 import React from "react";
-import { View, ImageBackground, Text, Image, StyleSheet } from "react-native";
-import { RectButton } from "react-native-gesture-handler";
+import { View, ImageBackground, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
@@ -19,16 +18,18 @@ const Home = () => {
         </View>
 
         <View style={styles.footer}>
-          <RectButton style={styles.button} onPress={() => { }}>
+          <TouchableOpacity style={styles.button} onPress={() => { }}>
+            <>
             <View style={styles.buttonIcon}>
               <Text>
              ➡️    
-        </Text>
+              </Text>
             </View>
             <Text style={styles.buttonText}>
               Entrar
             </Text>
-          </RectButton>
+            </>
+          </TouchableOpacity>
         </View>
       </ImageBackground>
     </>
