@@ -1,7 +1,7 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-
+import 'react-native-gesture-handler';
 import Home from "./pages/home";
 import Points from "./pages/Points";
 import Detail from "./pages/Detail";
@@ -12,8 +12,9 @@ const Routes = () => {
     return(
     <NavigationContainer>
         {/*//@ts-ignore*/}
-        <AppStack.Navigator headerMode="none"
+        <AppStack.Navigator 
         screenOptions={{
+            headerShown:false,
             cardStyle:{
                 backgroundColor:"#f0f0f5"
             }

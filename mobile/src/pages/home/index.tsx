@@ -3,6 +3,14 @@ import { View, ImageBackground, Text, Image, StyleSheet, TouchableOpacity } from
 import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
+
+  const navigation = useNavigation();
+
+  function handleNavigateToPoints(){
+
+    navigation.navigate("Points")
+  }
+
   return (
     <>
       {/*//@ts-ignore*/}
@@ -18,7 +26,7 @@ const Home = () => {
         </View>
 
         <View style={styles.footer}>
-          <TouchableOpacity style={styles.button} onPress={() => { }}>
+          <TouchableOpacity style={styles.button} onPress={handleNavigateToPoints}>
             <>
             <View style={styles.buttonIcon}>
               <Text>
