@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { isLoading } from 'expo-font';
 import { StatusBar,View } from 'react-native';
 
